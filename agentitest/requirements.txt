@@ -1,0 +1,7 @@
+allure_pytest==2.15.0
+browser_use[all]==0.8.0
+playwright==1.55.0
+pytest==8.4.2
+pytest_asyncio==1.2.0
+python_dotenv==1.1.1
+tenacity==8.5.0

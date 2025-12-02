@@ -1,0 +1,1 @@
+[32mINFO    [0m conftest:conftest.py:242 Running task: Go to https://discuss.google.dev/, then click on the 'Looker' link in the main navigation, and then return the final URL of the page.

@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "CK-12 Test Extension",
+  "host_permissions": ["<all_urls>"],
+  "version": "1.0",
+  "description": "A test extension for sending prompts to the CK-12 Flexi webpage.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Voice Recognition",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "Flexi_Telescope.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "Flexi_Telescope.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "tabs", "activeTab", "storage"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.ck12.org/flexi"], 
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval' http://localhost:* http://127.0.0.1:*; object-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self';"
+  }
+}

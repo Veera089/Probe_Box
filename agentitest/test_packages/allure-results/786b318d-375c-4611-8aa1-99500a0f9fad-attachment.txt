@@ -1,0 +1,1 @@
+Successfully navigated to https://www.ck12.org/flexi. The word 'Flexi' appears in the page title ('Flexi - A FREE Science and Mat') and in the visible header elements, confirming the page has loaded correctly.

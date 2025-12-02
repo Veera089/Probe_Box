@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CK-12 Test Extension</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="Flexi_Telescope.svg" alt="CK-12 Test Me" class="avatar">
+      <h1 class="title">CK-12 Probe Box</h1>
+    </div>
+    <hr>
+    <div class="ask-block">
+      <label for="testInput" class="ask-label">Ask what to test:</label>
+      <textarea id="inputBox" class="ask-input" placeholder="Type here what to test this page..."></textarea>
+      <button id="micBtn" class="mic-btn" title="Start listening">&#127908;
+      <button id="clearBtn" class="clear-btn hidden" title="Clear text">&times;</button>
+      </button>
+    </div>
+    <button id="submitBtn" class="send-btn">SEND</button>
+    <div class="report-block">
+      <h3>Test Report:</h3>
+      <div id="resultMsg" class="test-report">
+      </div>
+    </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

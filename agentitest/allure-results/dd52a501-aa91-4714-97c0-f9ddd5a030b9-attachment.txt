@@ -1,0 +1,2 @@
+[32mINFO    [0m conftest:conftest.py:242 Running task: Go to https://discuss.google.dev/, then confirm that the 'Google Developer Program forums' heading is visible on the page. Return 'all_elements_visible' if it is.
+[33mWARNING [0m conftest:conftest.py:230 Failed to take or attach screenshot: no close frame received or sent

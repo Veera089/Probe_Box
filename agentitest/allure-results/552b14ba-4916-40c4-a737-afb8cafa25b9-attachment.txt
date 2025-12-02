@@ -1,0 +1,1 @@
+thinking=None evaluation_previous_goal='Starting agent with initial actions' memory='' next_goal='Execute initial navigation or setup actions'

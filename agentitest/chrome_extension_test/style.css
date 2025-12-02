@@ -1,0 +1,265 @@
+body {
+  background: #f6f7fa;
+  font-family: ProximaNova, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+  border-color: #cbcfd4;
+}   
+
+.container {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px 18px;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #f6f5f3de;
+}
+
+.title {
+  font-size: 18px;
+  color: #36b3a7;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ask-block {
+  width: 100%;
+  margin: 24px 0 8px 0;
+  position: relative;
+}
+
+.ask-label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.ask-input {
+  width: 100%;
+  height: 130px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 3px solid rgb(0 0 0 / 15%);
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+  border-width: 2px;
+  font-family: ProximaNova, sans-serif;
+}
+
+.mic-btn {
+  position: absolute;
+  bottom: 28px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+  opacity: 0.7;
+}
+.mic-btn:hover {
+  opacity: 1;
+}
+
+.clear-btn {
+  position: absolute;
+  bottom: 28px;
+  right: 40px; /* Position next to the mic button */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+  opacity: 0.7;
+  line-height: 1;
+}
+.clear-btn:hover {
+  opacity: 1;
+}
+
+.mic-btn.listening {
+  animation: pulse infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.send-btn {
+  width: 100%;
+  background: #36b3a7;
+  color: #fff;
+  font-weight: 700; 
+  font-size: 16px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.report-block {
+  width: 100%;
+  margin-bottom: 24px;
+}
+/***
+.test-report {
+  background: #f6f7fa;
+  border-radius: 14px;
+  border: 2px solid #e3eaf3;
+}
+***/
+.report-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+    margin: 13px;
+}
+
+.report-item:last-child {
+  margin-bottom: 0;
+}
+
+.report-icon {
+  font-size: 21px;
+  margin-right: 10px;
+}
+
+.success {
+  color: #3cbc81;
+  margin: 14px;
+} /* This class is kept for semantic grouping but has no direct styles */
+
+.success-text {
+  color: #3cbc81;
+  font-size: 14px;
+  font-family: promixma nova, sans-serif;
+}
+
+/* This class is now only for the text color of error messages */
+.error-text {
+  color: #ee5757;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.error { 
+  color: #ee5757;
+  margin-left: 20px;
+  margin-top: 0px;
+} /* This class is kept for semantic grouping but has no direct styles */
+
+.share-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.share-btn {
+  background: #fff;
+  color: #36b3a7;
+  border: 2px solid #36b3a7;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 10px;
+  width: 85%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(54,179,167,0.05);
+}
+
+.share-icon {
+  font-size: 21px;
+}
+
+.running {
+  color: #8be9fd; /* A light blue for running status */
+}
+
+.info {
+  color: #3b82f6; /* A blue for informational messages */
+}
+
+
+.tick-circle {
+  width: 18px;
+  height: 18px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tick-circle::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(45deg);
+}
+
+.cross-circle {
+  width: 18px;
+  height: 18px;
+  background-color: #ee5757; /* error red */
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cross-circle::before, .cross-circle::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  width: 8px;
+  height: 2px;
+  background-color: white;
+}
+.cross-circle::before { transform: rotate(45deg); }
+.cross-circle::after { transform: rotate(-45deg); }
+
+.hidden {
+  display: none;
+}
