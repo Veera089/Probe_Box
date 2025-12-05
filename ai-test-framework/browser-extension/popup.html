@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Test Recorder</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            width: 250px;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
+        #recordButton { background-color: #28a745; }
+        #stopButton { background-color: #dc3545; }
+        #status { margin-top: 5px; font-style: italic; }
+        #assertVisibleButton { background-color: #ffc107; color: black; } /* Warning/Yellow color */
+        #addWaitButton { background-color: #17a2b8; } /* Info/Teal color */
+        button:disabled {
+            background-color: #6c757d;
+            opacity: 0.65;
+            cursor: not-allowed;
+        }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        #testFilesList { width: 100%; height: 100px; border-radius: 4px; border: 1px solid #ccc; }
+        #playButton { background-color: #007bff; }
+        #refreshTestsButton { background-color: #6c757d; font-size: 12px; padding: 8px; }
+        #playLogs {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+    </style>
+    <style>
+        .action-bar { display: flex; gap: 5px; align-items: center; }
+        .action-bar input { flex-grow: 1; width: 60px; }
+        .action-bar button { flex-grow: 2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Probe Box Recorder</h3>
+        <label for="fileName">Test Case Name:</label>
+        <input type="text" id="fileName" placeholder="e.g., successful-login">
+        <div class="action-bar">
+            <input type="number" id="waitInput" value="1000" min="100" step="100" title="Wait time in milliseconds">
+            <button id="addWaitButton">Add Wait</button>
+            <button id="assertVisibleButton">Assert Visible</button>
+        </div>
+        <button id="recordButton">Start Recording</button>
+        <button id="stopButton">Stop Recording</button>
+        <span id="status">Status: Idle</span>
+
+        <hr>
+
+        <h3>Play Tests</h3>
+        <button id="refreshTestsButton">Refresh List</button>
+        <select id="testFilesList" multiple></select>
+        <button id="playButton">Play Selected</button>
+        <span id="playStatus"></span>
+        <pre id="playLogs"></pre>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

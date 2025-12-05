@@ -1,0 +1,214 @@
+{
+  "name": "Signin-1",
+  "variables": {},
+  "steps": [
+    {
+      "action": "goto",
+      "selector": null,
+      "value": "https://www.ck12.org/flexi/#",
+      "stepName": "Navigate to https://www.ck12.org/flexi/#",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "wait",
+      "selector": null,
+      "value": "3000",
+      "stepName": "Wait for 3000ms",
+      "key": null,
+      "url": null
+    },
+    {
+      "action": "click",
+      "selector": "div#header > div:nth-of-type(2) > div:nth-of-type(3) > button",
+      "value": null,
+      "stepName": "click on div#header > div:nth-of-type(2) > div:nth-of-type(3) > button",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "click",
+      "selector": "[name=\"email\"]",
+      "value": null,
+      "stepName": "click on [name=\"email\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"email\"]",
+      "value": "ram+teacher@ck12.org",
+      "stepName": "type \"ram+teacher@ck12.org\" into [name=\"email\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "select",
+      "selector": "[name=\"email\"]",
+      "value": "ram+teacher@ck12.org",
+      "stepName": "select \"ram+teacher@ck12.org\" in [name=\"email\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "click",
+      "selector": "[name=\"token\"]",
+      "value": null,
+      "stepName": "click on [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "t",
+      "stepName": "type \"t\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "te",
+      "stepName": "type \"te\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "tes",
+      "stepName": "type \"tes\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "test",
+      "stepName": "type \"test\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "test1",
+      "stepName": "type \"test1\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "test12",
+      "stepName": "type \"test12\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "test123",
+      "stepName": "type \"test123\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "test1234",
+      "stepName": "type \"test1234\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "test12345",
+      "stepName": "type \"test12345\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "type",
+      "selector": "[name=\"token\"]",
+      "value": "test123456",
+      "stepName": "type \"test123456\" into [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "select",
+      "selector": "[name=\"token\"]",
+      "value": "test123456",
+      "stepName": "select \"test123456\" in [name=\"token\"]",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "click",
+      "selector": "div#id-dclc76 > div:nth-of-type(2) > div > div:nth-of-type(2) > div > button",
+      "value": null,
+      "stepName": "click on div#id-dclc76 > div:nth-of-type(2) > div > div:nth-of-type(2) > div > button",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "wait",
+      "selector": null,
+      "value": "4000",
+      "stepName": "Wait for 4000ms",
+      "key": null,
+      "url": null
+    },
+    {
+      "action": "click",
+      "selector": "button#header_user_dropdown > span:nth-of-type(2)",
+      "value": null,
+      "stepName": "click on button#header_user_dropdown > span:nth-of-type(2)",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "expect",
+      "selector": "button#header_user_dropdown > span:nth-of-type(2)",
+      "value": null,
+      "stepName": "Expect button#header_user_dropdown > span:nth-of-type(2) to be visible",
+      "key": null,
+      "url": null
+    },
+    {
+      "action": "click",
+      "selector": "#header_user_dropdown",
+      "value": null,
+      "stepName": "click on #header_user_dropdown",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "click",
+      "selector": "div#id-15q05m > div:nth-of-type(2) > ul > li:nth-of-type(5) > a",
+      "value": null,
+      "stepName": "click on div#id-15q05m > div:nth-of-type(2) > ul > li:nth-of-type(5) > a",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    },
+    {
+      "action": "expect",
+      "selector": "div#id-15q05m > div:nth-of-type(2) > ul > li:nth-of-type(5) > a",
+      "value": null,
+      "stepName": "Expect div#id-15q05m > div:nth-of-type(2) > ul > li:nth-of-type(5) > a to be visible",
+      "key": null,
+      "url": null
+    },
+    {
+      "action": "click",
+      "selector": "button#header_user_dropdown > span:nth-of-type(2)",
+      "value": null,
+      "stepName": "click on button#header_user_dropdown > span:nth-of-type(2)",
+      "key": null,
+      "url": "https://www.ck12.org/flexi/#"
+    }
+  ]
+}

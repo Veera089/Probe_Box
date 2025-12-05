@@ -1,0 +1,22 @@
+{
+  "name": "ai-test-framework",
+  "version": "1.0.0",
+  "description": "A self-healing test framework using Playwright and an LLM agent.",
+  "main": "src/runner.js",
+  "scripts": {
+    "test": "node src/runner.js",
+    "test:suite": "node src/run-suite.js"
+  },
+  "keywords": [
+    "playwright",
+    "ai",
+    "testing",
+    "gemini"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.1.3",
+    "playwright": "^1.40.1"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Test",
+  "variables": {},
+  "steps": [
+    {
+      "action": "goto",
+      "selector": null,
+      "value": "https://master.ck12.org/flexi/#q=Outline%20the%20steps%20of%20translation&ref=student-landing",
+      "stepName": "Navigate to https://master.ck12.org/flexi/#q=Outline%20the%20steps%20of%20translation&ref=student-landing",
+      "key": null,
+      "url": "https://master.ck12.org/flexi/#q=Outline%20the%20steps%20of%20translation&ref=student-landing"
+    },
+    {
+      "action": "wait",
+      "selector": null,
+      "value": "1000",
+      "stepName": "Wait for 1000ms",
+      "key": null,
+      "url": null
+    },
+    {
+      "action": "click",
+      "selector": "div#header > div:nth-of-type(2) > div:nth-of-type(3) > button",
+      "value": null,
+      "stepName": "click on div#header > div:nth-of-type(2) > div:nth-of-type(3) > button",
+      "key": null,
+      "url": "https://master.ck12.org/flexi/#q=Outline%20the%20steps%20of%20translation&ref=student-landing"
+    },
+    {
+      "action": "expect",
+      "selector": "div#header > div:nth-of-type(2) > div:nth-of-type(3) > button",
+      "value": null,
+      "stepName": "Expect div#header > div:nth-of-type(2) > div:nth-of-type(3) > button to be visible",
+      "key": null,
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Capture-Teacher-Page",
+  "variables": {},
+  "steps": [
+    {
+      "action": "goto",
+      "selector": null,
+      "value": "https://www.ck12.org/teacher/",
+      "stepName": "Navigate to https://www.ck12.org/teacher/",
+      "key": null,
+      "url": "https://www.ck12.org/teacher/"
+    },
+    {
+      "action": "wait",
+      "selector": null,
+      "value": "3000",
+      "stepName": "Wait for 3000ms",
+      "key": null,
+      "url": null
+    },
+    {
+      "action": "click",
+      "selector": "main#app-container > nav > div > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > div > h2",
+      "value": null,
+      "stepName": "click on main#app-container > nav > div > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > div > h2",
+      "key": null,
+      "url": "https://www.ck12.org/teacher/"
+    },
+    {
+      "action": "expect",
+      "selector": "main#app-container > nav > div > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > div > h2",
+      "value": null,
+      "stepName": "Expect main#app-container > nav > div > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > div > h2 to be visible",
+      "key": null,
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "AI Test Recorder",
+  "version": "1.0",
+  "description": "Records user actions to generate a JSON test script.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Test Recorder",
+    "default_icon": {
+      "48": "Flexi_Telescope.png"
+    }
+  },
+  "icons": {
+    "48": "Flexi_Telescope.png",
+    "128": "Flexi_Telescope.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
